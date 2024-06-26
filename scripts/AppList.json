@@ -1,0 +1,9 @@
+[
+  {
+    "PackageName": "Microsoft.VisualStudioCode",
+    "Arguments": [
+      "--override",
+      "/SILENT /mergetasks=\"!runcode,addcontextmenufiles,addcontextmenufolders\""
+    ]
+  }
+]

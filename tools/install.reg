@@ -1,0 +1,132 @@
+Windows Registry Editor Version 5.00
+
+; Disabling Sponsored Apps
+[HKEY_LOCAL_MACHINE\zNTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"OemPreInstalledAppsEnabled"=dword:00000000
+"PreInstalledAppsEnabled"=dword:00000000
+"SilentInstalledAppsEnabled"=dword:00000000
+"ContentDeliveryAllowed"=dword:00000000
+"ContentDeliveryAllowed"=dword:00000000
+"ContentDeliveryAllowed"=dword:00000000
+"FeatureManagementEnabled"=dword:00000000
+"OemPreInstalledAppsEnabled"=dword:00000000
+"PreInstalledAppsEnabled"=dword:00000000
+"PreInstalledAppsEverEnabled"=dword:00000000
+"SilentInstalledAppsEnabled"=dword:00000000
+"SoftLandingEnabled"=dword:00000000
+"SubscribedContentEnabled"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContent"=dword:00000000
+"SubscribedContentEnabled"=dword:00000000
+"SystemPaneSuggestionsEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001
+
+[HKLM\zSOFTWARE\Microsoft\PolicyManager\current\device\Start]
+"ConfigureStartPins"="{"pinnedList": [{}]}"
+
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\PushToInstall]
+"DisablePushToInstall"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+
+[-HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\Subscriptions]
+
+[-HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager\SuggestedApps]
+
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableConsumerAccountStateContent"=dword:00000001
+"DisableCloudOptimizedContent"=dword:00000001
+
+; Enabling Local Accounts on OOBE
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"BypassNRO"=dword:00000001
+
+; Disabling Reserved Storage
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager]
+"ShippedWithReserves"=dword:00000000
+
+; Disabling Chat icon
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\Windows\Windows Chat]
+"ChatIcon"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\zNTUSER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarMn"=dword:00000000
+
+; Removing Edge related registries
+[-HKEY_LOCAL_MACHINE\zSOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge]
+
+[-HKEY_LOCAL_MACHINE\zSOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge Update]"
+
+; Disabling OneDrive folder backup
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\Windows\OneDrive]
+"DisableFileSyncNGSC"=dword:00000001
+
+; Disabling Telemetry
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Speech_OneCore\Settings\OnlineSpeechPrivacy]
+"HasAccepted"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Input\TIPC]
+"Enabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zSOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zSYSTEM\ControlSet001\Services\dmwappushservice]
+"Start"=dword:00000004
+
+; Disable weather/widget in taskbar, align taskbar left, remove tasks button, open explorer in This PC instead of Home, remove checkboxes on files, show hidden files, show file extensions
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"TaskbarMn"=dword:00000000
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"AutoCheckSelect"=dword:00000000
+"UseCompactMode"=dword:00000001
+"LaunchTo"=dword:00000001
+"ShowTaskViewButton"=dword:00000000
+"TaskbarAl"=dword:00000000
+"TaskbarDa"=dword:00000000
+
+; Disable new right click context menu
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32]
+@=""
+
+; Enable dark mode
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"ColorPrevalence"=dword:00000000
+"EnableTransparency"=dword:00000000
+"AppsUseLightTheme"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\Themes]
+"WallpaperSetFromTheme"=dword:00000001
+"ColorSetFromTheme"=dword:00000001
+"CurrentTheme"="C:\\Windows\\resources\\Themes\\dark.theme"
+"SetupVersion"="10"
+"ThemeMRU"="C:\\Windows\\resources\\Themes\\dark.theme;C:\\Windows\\resources\\Themes\\aero.theme;"
+
+; Disable Search icon in taskbar
+[HKEY_LOCAL_MACHINE\zNTUSER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
